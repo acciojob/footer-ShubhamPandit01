@@ -1,1 +1,108 @@
 /* your code here */
+/* General styling for the footer */
+footer {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Footer content layout */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.logo-details {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.media-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.media-icon {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.media-icon:hover {
+  color: #3498db;
+}
+
+/* Link box sections */
+.link-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.box {
+  flex: 1;
+  min-width: 150px;
+}
+
+.box h2 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.box ul li {
+  margin: 10px 0;
+}
+
+.box ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.box ul li a:hover {
+  color: #3498db;
+}
+
+/* Bottom contact section */
+.bottom-details {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.contact p {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .link-boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+}
